@@ -1,0 +1,50 @@
+.box{
+		position: relative;
+		width: 500px;
+		height: 400px;
+		margin: auto;
+		background-color: rgba(0, 0, 0, 0.4);
+		color: #fff;
+		margin-top: 150px;
+		padding: 30px 0;
+		border-radius: 10px;
+}
+ul :nth-of-type(4) a{
+		color: orange;
+}
+h2{
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
+}
+#form{
+	margin-left: 15px;
+	margin-top: 30px;
+	/*border: 1px solid red;*/
+}
+#date{
+
+}
+#show{
+	width: 80%;
+	height: 50%;
+	margin: auto;
+	margin-top: 25px;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+	border: 3px double gray;
+	
+}
+#hour,#min,#sec{
+	width: 50px;
+	text-align: center;
+	margin: 10px;
+}
+#btn{
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	margin: 10px;
+	color: #fff;	
+}

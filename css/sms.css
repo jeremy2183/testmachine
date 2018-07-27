@@ -1,0 +1,68 @@
+.box{
+		position: relative;
+		width: 500px;
+		height: 400px;
+		margin: auto;
+		background-color: rgba(0, 0, 0, 0.4);
+		color: #fff;
+		margin-top: 150px;
+		padding: 30px 0;
+		border-radius: 10px;
+}
+ul :nth-of-type(3) a{
+		color: orange;
+}
+h2{
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
+}
+#code	{
+	width: 50px;
+	text-align: right;
+}
+#number{
+	width: 100px;
+	text-align: right;
+}
+#content{
+	text-align: center;
+	margin-top: 30px;
+}
+#content:before{
+  content: '國碼';
+  position: absolute;
+  top: 100px;	
+  left: 145px;
+	font-size: 16px;
+	color: #fff;
+}
+#content:after{
+  content: '手機號碼';
+  position: absolute;
+  top: 100px;	
+  left: 225px;
+	font-size: 16px;
+	color: #fff;
+}
+#content input{
+	margin: 0 5px;
+}
+#show{
+	width: 80%;
+	height: 50%;
+	margin: auto;
+	margin-top: 25px;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+	border: 3px double gray;
+	
+}
+#btn{
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	margin: 10px;
+	color: #fff;	
+}

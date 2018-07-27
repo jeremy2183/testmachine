@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		input{
+			width: 50px;
+			text-align: center;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	 <h2>請輸入時:分:秒</h2>
+	 <form method="POST" action="test.php">
+			<input id="hour" type="text" name="hour" maxlength="2">時：
+			<input id="min" type="text" name="min" maxlength="2">分：
+			<input id="sec" type="text" name="sec" maxlength="2">秒：
+			<input id="btn" type="submit" name="" value="確定">
+		</form>
+
+		<script type="text/javascript">
+			var hour = document.getElementById("hour"); //時
+			var min = document.getElementById("min"); //分
+			var sec = document.getElementById("sec"); //秒
+			var btn = document.getElementById("btn");
+			btn.onclick = function(){
+				if(sec.value > 59 || min.value > 59 || hour.value > 23){
+					alert("格式不正確");
+					hour.value="";
+					min.value="";
+					sec.value="";
+					return false;
+				}
+			}
+		</script>
+</body>
+</html>

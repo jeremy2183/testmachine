@@ -1,0 +1,137 @@
+ .box{
+		width: 500px;
+		height: 450px;
+		margin: auto;
+		background-color: rgba(0, 0, 0, 0.4);
+		color: #fff;
+		margin-top: 150px;
+		padding: 30px 0;
+		border-radius: 10px;
+	}
+	#showbox{     /*顯示北京時間*/
+		font-size: 20px;
+		text-align: center;
+	}
+	.flex{
+		display: flex;
+		width: 480px;	
+		font-size: 20px;
+		text-align: center;
+		justify-content: space-around;
+		/*border: 1px solid red;*/
+	}
+	ul :nth-of-type(1) a{
+			color: orange;
+		}
+	ol{
+		margin: 15px;
+		border-bottom: 1px solid red;
+	}
+	#one{    /*時間1*/
+		width: 100px;
+		height: 30px;	
+	}
+	#two{		 /*時間2*/
+		width: 100px;
+		height: 30px;	
+	}
+	#three{  /*時間3*/
+		width: 100px;
+		height: 30px;	
+	}
+	.time_one{     /*主機名稱區塊*/
+		padding: 40px;
+	}
+	.time_two{     /*顯示時間區塊*/
+		padding: 35px;
+	}
+	.time_three{		/*修改圖案*/
+		display: flex;
+		flex-direction: column;
+	}
+	#btn1{         /*修改圖案1*/
+		margin-top: 40px;
+		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border:none;
+		cursor: pointer;
+	}
+	#btn2{				 /*修改圖案2*/
+		margin-top: 0px;
+		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border:none;
+		cursor: pointer;
+	}
+	#btn3{         /*修改圖案3*/
+		margin-top: 0px;
+		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border:none;
+		cursor: pointer;
+	}
+	#btn4{        /*修改*/
+		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		color: #fff;
+	}
+	#btn5{				/*取消*/
+		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		color: #fff;
+	}
+	#btn6{				/*取消*/
+		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		color: #fff;
+	}
+	#ajax_btn{
+		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		margin: 10px;
+		color: #fff;
+	}
+	#ajax_btn2{
+		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		margin: 10px;
+		color: #fff;
+	}
+	#form{
+		margin-left: 40px;
+		display: none;
+		margin: auto;
+		text-align: center;
+		border: 1.5px double #666;
+	}
+	#form2{
+		margin-left: 40px;
+		display: none;
+		margin: auto;
+		text-align: center;
+		border: 1.5px double #999;
+	}
+	#hour,#min,#sec{
+		width: 50px;
+		text-align: center;
+		margin: 10px;
+	}
+	#hour2,#min2,#sec2{
+		width: 50px;
+		text-align: center;
+		margin: 10px;
+	}
+	#showDataForm{
+		width: 250px;
+		height: 50px;
+		color: #fff;
+		margin: auto;
+		text-align: center;
+		line-height: 60px;
+		/*border: 1px solid red;*/
+	}
