@@ -17,7 +17,7 @@ $sev = explode(',',$result);
  
 
 if(isset($_POST["memId"]) === true){
-	if($memId == $cus["id"] && $memPsw == $cus["psw"] || $memId == $cus["id2"] && $memPsw == $cus["psw2"] || $memId == $cus["id3"] && $memPsw == $cus["psw3"] || $cus["id4"] && $memPsw == $cus["psw4"]){
+	if($memId == $cus["id"] && $memPsw == $cus["psw"] || $memId == $cus["id2"] && $memPsw == $cus["psw2"] || $memId == $cus["id3"] && $memPsw == $cus["psw3"] || $memId == $cus["id4"] && $memPsw == $cus["psw4"]){
 		
 		session_start();
     
