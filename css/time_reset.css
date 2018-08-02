@@ -88,6 +88,12 @@
 		border-radius: 5px;
 		color: #fff;
 	}
+	#btn7{				/*取消*/
+		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		color: #fff;
+	}
 	#ajax_btn{
 		padding: 5px;
 		background-color: rgba(0, 0, 0, 0.2);
@@ -96,6 +102,13 @@
 		color: #fff;
 	}
 	#ajax_btn2{
+		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		margin: 10px;
+		color: #fff;
+	}
+	#ajax_btn3{
 		padding: 5px;
 		background-color: rgba(0, 0, 0, 0.2);
 		border-radius: 5px;
@@ -116,12 +129,25 @@
 		text-align: center;
 		border: 1.5px double #999;
 	}
+	#form3{
+		margin-left: 40px;
+		display: none;
+		margin: auto;
+		text-align: center;
+		border: 1.5px double #f83;
+	}
+
 	#hour,#min,#sec{
 		width: 50px;
 		text-align: center;
 		margin: 10px;
 	}
 	#hour2,#min2,#sec2{
+		width: 50px;
+		text-align: center;
+		margin: 10px;
+	}
+	#hour3,#min3,#sec3{
 		width: 50px;
 		text-align: center;
 		margin: 10px;

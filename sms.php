@@ -50,9 +50,9 @@ if($_SESSION["authenticated"] == true){
 		
 		 var hr = new XMLHttpRequest();
         
-        // var url = "http://localhost/phpLab/php_test/testmachine/api_sms.php"; //本地端
+        var url = "http://localhost/phpLab/php_test/testmachine/api_sms.php"; //本地端
 
-        var url = "http://35.197.87.247/jeremy/php_test/testmachine/api_sms.php";
+        // var url = "http://35.197.87.247/jeremy/php_test/testmachine/api_sms.php";
 
         hr.onreadystatechange = function(){
           if(this.readyState == 4 && this.status == 200){
