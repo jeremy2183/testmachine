@@ -1,16 +1,6 @@
 <?php 
-
-session_start();
-if($_SESSION["authenticated"] == true){
-		$result = '登入者：'.$_SESSION["memId"];
-	}else{
-		header('Location: login.php');
-		exit;
-	}
-	$time =  date('H:i:s');
+require_once('session.php');
 ?>
-
-
 <?php
 	//主機1
 	$ch = curl_init();

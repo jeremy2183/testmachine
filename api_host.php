@@ -1,15 +1,6 @@
 <?php 
-
-session_start();
-if($_SESSION["authenticated"] == true){
-		$result = '登入者：'.$_SESSION["memId"];
-	}else{
-		header('Location: login.php');
-		exit;
-	}
-
+require_once('session.php');
 require("api_call.php");
-
 $apitest = new apitest();
 $sites = $apitest -> siteStatus();
 // var_dump($sites);
