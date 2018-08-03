@@ -19,28 +19,43 @@
 	echo gettype($aa[0][1])." : ".$aa[0][1];
 	echo "<br>";
 	
-	 $memId = "jeremy";
-	 $psw = "123";
+	 // $memId = "jeremy";
+	 // $psw = "123";
+
+	 // $memId = "iroman";
+	 // $psw = "456";
+
+	 // $memId = "flash";
+	 // $psw = "789";
+
+	 $memId = "vivian";
+	 $psw = "012";
 
 	echo gettype($memId)." : ".$memId;
 	echo "<br>";
 	echo gettype($psw)." : ".$psw;
 	echo "<br>";
-
-   if ($memId == $aa[0][0] && $psw == $aa[0][1]){
-			echo "答對了";
-		}else{
-			echo "答錯了";
-		}
-
-
+  
+  $date = date("Y/m/d h:i:sa");
+	
 	echo "<br>";
 	for($i=0; $i<$len; $i++){
 	   echo "ID : ".$aa[$i][0]." "."psw : ".$aa[$i][1]."<br>";
-	   if ($memId == $aa[$i][0] && $psw == $aa[$i][1]){
-				echo "答對了是jeremy"."<br>";
-			}
+	   if($memId == $aa[$i][0] && $psw == $aa[$i][1]){
+				$a = "答對了"."<br>";
+				echo "<script>
+					  	alert('登入成功');
+					  	</script>";
+				file_put_contents("memlogin.txt", "‧ 登入者：".$memId ." ".$date." ", FILE_APPEND);  
+				break;
+		 }else{
+        $a = "<script>
+					  	alert('請重新輸入');
+					  	window.location = 'index.html';
+					  	</script>";
+		 }
 	}
+	echo $a;
 	
 	
 
