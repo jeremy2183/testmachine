@@ -4,11 +4,6 @@ $memId = $_POST['memId'];
 $memPsw = $_POST['memPsw'];
 require_once("member.php");  //帳密
 $len = count($mem);
-
-// echo gettype($memId)." : ".$memId;
-// echo "<br>";
-// echo gettype($memPsw)." : ".$memPsw;
-// echo "<br>";
 $day = date("Ymd");
 $date = date("Y/m/d h:i:sa");
 
@@ -33,13 +28,11 @@ if(isset($_POST["memId"]) === true){
 	 }
 }
 echo $a;
-   
 }else {
 	echo "查無此帳密，請重新登入";
 	echo "<br>";
 	echo "<a href='index.html'>回首頁</a>";
 	exit;
 }
-
 ?>
 
