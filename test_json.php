@@ -1,11 +1,9 @@
 <?php 
- $file = fopen("memName.txt", "r");
+  $file = fopen("http://35.197.87.247/jeremy/php_test/testmachine/memName.txt", "r");
 
-//輸出文本中所有的行，直到文件結束為止。
+  //輸出文本中所有的行，直到文件結束為止。
 	while(! feof($file)){
-	  // echo fgets($file)."<br>";
 	  $data=fgets($file);   //fgets 一次抓一行
-	  //$x=json_encode($data);
 	  echo "<pre>";
 	  print_r(json_decode($data,true));
 	  $aa = json_decode($data,true);
@@ -25,11 +23,11 @@
 	 // $memId = "iroman";
 	 // $psw = "456";
 
-	 // $memId = "flash";
-	 // $psw = "789";
+	 $memId = "flash";
+	 $psw = "789";
 
-	 $memId = "vivian";
-	 $psw = "012";
+	 // $memId = "vivian";
+	 // $psw = "012";
 
 	echo gettype($memId)." : ".$memId;
 	echo "<br>";
@@ -42,17 +40,13 @@
 	for($i=0; $i<$len; $i++){
 	   echo "ID : ".$aa[$i][0]." "."psw : ".$aa[$i][1]."<br>";
 	   if($memId == $aa[$i][0] && $psw == $aa[$i][1]){
-				$a = "答對了"."<br>";
-				echo "<script>
-					  	alert('登入成功');
-					  	</script>";
+				$a = "<script>alert('登入成功');</script>";
 				file_put_contents("memlogin.txt", "‧ 登入者：".$memId ." ".$date." ", FILE_APPEND);  
 				break;
 		 }else{
-        $a = "<script>
-					  	alert('請重新輸入');
-					  	window.location = 'index.html';
-					  	</script>";
+	     	$a = "<script>
+							alert('請重新輸入');
+							</script>";
 		 }
 	}
 	echo $a;
